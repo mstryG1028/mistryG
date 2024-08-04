@@ -1,3 +1,385 @@
-div{
-    color: red;
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --themecolor11: rgb(85, 0, 0);
+  --themecolor1: rgb(3, 3, 75);
+  --themecolorr: rgb(221, 214, 214);
+  --themecolor: rgb(253, 222, 222);
+  --hovercolor:  rgb(3, 3, 75);
+}
+body {
+  background-color: var(--themecolor);
+}
+.main {
+  background-color: var(--themecolor);
+  font-family: sans-serif;
+  height: 100%vh;
+  width: 100%vh;
+  display: flex;
+}
+.navbar1 {
+  border: 1px solid black;
+  border-bottom: none;
+  background-color: var(--themecolor);
+  height: 36px;
+  width: 1362px;
+  display: flex;
+  text-align: center;
+}
+
+/* for first navbar */
+.menubarbtn {
+  margin-left: 10px;
+  background-color: var(--themecolor);
+  cursor: pointer;
+  height: 36px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: transparent;
+}
+.l1 {
+  height: 5px;
+  width: 30px;
+  margin-top: 3px;
+  background-color: black;
+}
+.l2 {
+  height: 5px;
+  width: 30px;
+  margin-top: 3px;
+  background-color: black;
+}
+.l3 {
+  height: 5px;
+  width: 30px;
+  margin-top: 3px;
+  background-color: black;
+}
+
+/* FOR MENU BOX */
+
+.menubox {
+  z-index: 15;
+  display: none;
+  background: var(--themecolor);
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: 100px;
+  border: 1px solid var(--themecolor);
+  border-radius: 3px;
+}
+.welcomebox {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: var(--themecolor);
+  color: var(--themecolor1);
+  font-size: 30px;
+  border-bottom: 2px solid black;
+}
+.welcomebox h1 {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.close-btn {
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  margin-left: 45px;
+  margin-top: 10px;
+  color: var(--themecolor1);
+}
+
+.menulist {
+  margin-top: 20px;
+}
+.menuitems {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 98%;
+  margin-top: 10px;
+  background-color: var(--themecolor);
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.menuitems h1 {
+  color: var(--themecolor1);
+  font-size: 17px;
+  color: var(--themecolor1);
+  margin-top: 7px;
+  margin-left: 20px;
+}
+.menuitems span {
+  margin-right: 10px;
+}
+.menuitems span:hover {
+  color: var(--themecolor1);
+}
+.menuitems:hover {
+  color: var(--themecolor1);
+  font-weight: bolder;
+  font-size: 23px;
+}
+.sociel-site {
+  display: flex;
+  height: 30px;
+  width: 98%;
+  margin-top: 10px;
+  background-color: var(--themecolor);
+  box-shadow: 1px 1px 1px 1px var(--themecolor);
+  border-radius: 3px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+.sociel-site i {
+  margin-top: 6px;
+  font-size: 17px;
+}
+.sociel-site i:hover {
+  color: var(--themecolor1);
+  font-size: 19px;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  position: relative;
+  top: 5px;
+  color: var(--themecolor1);
+  height: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.searchbox {
+  color: var(--themecolor1);
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  height: 36px;
+  border-radius: 2px;
+}
+.searchinput {
+  font-weight: bolder;
+  color: var(--themecolor1);
+  font-size: 17px;
+  height: 36px;
+  width: 750px;
+  border-radius: 2px;
+  background-color: var(--themecolor);
+  border: 1px solid black;
+}
+
+.searchbox:hover {
+  position: relative;
+  z-index: 20;
+  height: 300px;
+  width: 750px;
+  background-color: var(--themecolor);
+  border: 1px solid black;
+}
+.searchbtnBox {
+  height: 36px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+.searchbtn {
+  border: 1px solid;
+  color: black;
+  height: 36px;
+  width: 40px;
+  background-color: var(--themecolor);
+  border-radius: 2px;
+}
+.cartBox {
+  height: 36px;
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 100px;
+}
+.loginLogo {
+  background-color: var(--themecolor);
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+.modeLogo {
+  background-color: var(--themecolor);
+  border: none;
+  background: transparent;
+}
+
+.callLogo {
+  background-color: var(--themecolor);
+  border: none;
+  background: transparent;
+}
+
+.numberbox {
+  height: 300px;
+  width: 250px;
+  border-left: 1px solid var(--themecolor1);
+  border-top: 1px solid var(--themecolor1);
+  border-radius: 5px;
+  display: none;
+  top: 50px;
+  z-index: 17;
+  position: absolute;
+  background-color: var(--themecolor);
+  margin-right: 100px;
+  transition: 1s ease-in-out;
+  color: var(--themecolor1);
+}
+.calltext {
+  height: 40px;
+  width: 98%;
+border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  color: var(--themecolor1);
+  font-weight: bold;
+  background: transparent;
+}
+.numberlistbox {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+/* .numberlist  {
+  height: 30px;
+  width: 98%;
+} */
+.numberlist a{
+  height: 35px;
+  width: 98%;
+  display: flex;
+  text-decoration: none;
+  border-bottom: 1px solid var(--themecolor1);
+  border-radius: 2px;
+  /* margin-top: 12px; */
+  margin-left: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  color: var(--themecolor1);
+  
+}
+.numberlist a:hover{
+  background-color: var(--themecolor1);
+  color: white;
+  font-size:18px ;
+  
+}
+
+
+/* for second navbar */
+.navbar2 {
+  border: 1px solid black;
+  background-color: var(--themecolor);
+  height: 36px;
+  width: 1362px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navEle {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navEle a {
+  color: var(--themecolor1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 25px;
+  width: 120px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.navEle a:hover {
+  background-color: var(--hovercolor);
+  color: white;
+}
+
+/* middle part */
+
+/* Slider */
+.body {
+  background-color: var(--themecolor);
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 212vh;
+  border: 1px solid rgb(59, 13, 13);
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.frame {
+  height: 70vh;
+  width: 1000px;
+  box-shadow: 2px 2px 4px 2px rgb(85, 84, 84);
+
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: 1s ease-in;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.rightarrow {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rightarrow {
+  font-size: 40px;
+}
+.leftarrow {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#leftarrow {
+  font-size: 40px;
 }

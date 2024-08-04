@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  /> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --themecolor1: rgb(128, 1, 1);
+  --themecolor:   rgb(221, 214, 214);
+  --hovercolor:rgb(73, 72, 72);
+}
+
+.main{
+  background-color: var(--themecolor);
+margin-left: 510px;
+margin-top: 100px;
+  border: 1px solid;
+  height: 300px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--themecolor1);
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+.usernameBox{
+  color: var(--themecolor1);
+  margin-top: 20px;
+  border: 2px solid ;
+  border-radius: 5px;
+  height: 30px;
+  width: 350px;
+  
+}
+.usernameBox i{
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.username{
+outline: none;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 25px;
+  border: none;
+  background-color: var(--themecolor);
+}
+.passwordBox{
+  color: var(--themecolor1);
+  margin-top: 20px;
+  border: 2px solid ;
+  border-radius: 5px;
+  height: 30px;
+  width: 350px;
+  font-size: 15px;
+}
+.password{
+  outline: none;
+  margin-left: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+  height: 25px;
+  border: none;
+  background-color: var(--themecolor);
+
+}
+.passwordBox i{
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.rememberBox {
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+text-align: center;
+  height: 30px;
+}
+.remember{
+  margin-left: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.forgotPassword{
+  margin-left: 70px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.loginBox{
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+.submitButton{
+  height: 28px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: var(--themecolor);
+  color: var(--themecolor1);
+
+}
+
+
+     
+  </style>
+  <body>
+  <form action="index.html">
+    <div class="main">
+      <header>Login</header>
+      <hr>
+      <div class="usernameBox">
+        <i class="fa-solid fa-user"></i>
+        <input type="username" placeholder="username" class="username"/>
+      </div>
+      <div class="passwordBox">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="password" class="password">
+      </div>
+      <div class="rememberBox">
+        <label for="remember">
+          <input type="checkbox" class="remember">
+        </label>   <span class="remember">remember Me</span>
+        <span class="forgotPassword">Forgot password</span>
+      
+      </div>
+      <div class="loginBox">
+        <button type="submit" class="submitButton" onsubmit="openMainPage()">Login</button>
+      </div>
+    </div>
+  
+  </form>
+     
+    <script>
+        function openMainPage(){
+            window.open("index.html","_parent");
+        }
+    </script>
+  </body>
+</html>
